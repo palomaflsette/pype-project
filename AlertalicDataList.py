@@ -1,6 +1,6 @@
 import json
 import requests
-from alertalic_settings import API_TOKEN_ALERTA, lista_url_alerta
+from AlertalicSettings import API_TOKEN_ALERTA, lista_url_alerta
 
 headers = {'Accept': "application/json",
            'chave-api-dados': '{0}'.format(API_TOKEN_ALERTA)}
@@ -25,8 +25,8 @@ def get_alertabid():
 
 alertabid = get_alertabid()
 
-print(len(alertabid))
-print(alertabid[0])
+#print(len(alertabid))
+#print(alertabid[1][40]['id_licitacao'])
 
 
 '''api_url=None

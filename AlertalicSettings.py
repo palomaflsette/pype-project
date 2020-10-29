@@ -4,7 +4,7 @@ API_TOKEN_ALERTA = 'a27d0b3a41e73335a24af27094457098'
 
 uf = 'RJ,SP,AL,MT,MG,RS,SE,AM'
 
-palavras_chave = 'engenharia,obras,pavimentacao,reforma,construcao'
+palavras_chave = 'engenharia,pavimentacao,reforma,construcao,estrada,construtora,restauracao,obra'
 
 cod_municipios = [] #caso a haja interesse, consultar a planilha que está no diretório para encontrar os códigos dos municípios
 
@@ -22,7 +22,7 @@ url_alertalic2 = 'https://alertalicitacao.com.br/api/v1/licitacoesAbertas/?uf={0
 
 lista_url_alerta = [url_alertalic1, url_alertalic2]
 
-print(lista_url_alerta)
+#print(lista_url_alerta)
 
 '''Mais informações em:'''
 #https://alertalicitacao.com.br/!api

@@ -1,7 +1,7 @@
 import os
 import sys 
 from datetime import date, datetime, timezone
-from bid_data_list import get_data_bid
+from BidDataList import get_data_bid
 
 
 _bid = get_data_bid()
@@ -50,6 +50,6 @@ def organize(data):
             
                 
                         
-print(organize(_bid[1][0]))
+#print(organize(_bid[1][0]))
 
 #print(_bid[0][0]['licitacao']['objeto'])
