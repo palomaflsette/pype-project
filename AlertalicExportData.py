@@ -28,8 +28,13 @@ def orgao(dic_bid, n1, n2):
 def objeto(dic_bid, n1, n2):
     return dic_bid[n1][n2]['objeto']
 
-def data_abertura(dic_bid, n1, n2):
-    return dic_bid[n1][n2]['abertura_datetime']
+def data_hora(dic_bid, n1, n2):
+    return dic_bid[n1][n2]['aberturaComHora']
+
+def formatDate (dic_bid, n1, n2):
+    data = dic_bid[n1][n2]['abertura_datetime'].split(' ')[0]
+    
+    return data
 
 def data(dic_bid, n1, n2):
     return dic_bid[n1][n2]['abertura']
@@ -51,7 +56,7 @@ def desc(dic_bid, n1, n2):
                                                                                                                                                                                                                                   objeto(dic_bid, n1, n2),
                                                                                                                                                                                                                                   uf(dic_bid,n1,n2),
                                                                                                                                                                                                                                   orgao(dic_bid, n1, n2),
-                                                                                                                                                                                                                                  data_abertura(dic_bid, n1,n2),
+                                                                                                                                                                                                                                  data_hora(dic_bid, n1,n2),
                                                                                                                                                                                                                                   link(dic_bid,n1,n2),
                                                                                                                                                                                                                                   link_externo(dic_bid, n1, n2),
                                                                                                                                                                                                                                   municipio(dic_bid, n1, n2),
@@ -60,4 +65,4 @@ def desc(dic_bid, n1, n2):
     
     return text
 
-print(desc(_alertbid,0,0)) 
+print(formatDate(_alertbid, 1, 0))

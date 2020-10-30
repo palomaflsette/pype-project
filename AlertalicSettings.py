@@ -22,7 +22,7 @@ url_alertalic2 = 'https://alertalicitacao.com.br/api/v1/licitacoesAbertas/?uf={0
 
 lista_url_alerta = [url_alertalic1, url_alertalic2]
 
-#print(lista_url_alerta)
+print(lista_url_alerta)
 
 '''Mais informações em:'''
 #https://alertalicitacao.com.br/!api

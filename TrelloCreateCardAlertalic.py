@@ -1,8 +1,9 @@
 import requests
 from random import randint
-from TrelloSettings import token, apiKey
-from AlertalicExportData import titulo, desc, _alertbid
+from TrelloSettings import token, apiKey, idTopCardAlert, idAlertaList
+from AlertalicExportData import titulo, desc, _alertbid, formatDate
 from GraphsPortal import *
+import TrelloPutCardOnTop
 
 url = "https://api.trello.com/1/cards"
 
@@ -17,7 +18,8 @@ query = {
    'name': titulo(_alertbid, num1, num2).upper(), 
    'desc':  desc(_alertbid,num1, num2) + line + obrasFornec + outrosFornec,
    'pos': 'top',
-   'idList':'5f930e76a536284bc3304799' #id da list
+   'due' : formatDate(_alertbid, num1, num2),
+   'idList': idAlertaList #id da list
 }
 
 response = requests.request(
@@ -26,4 +28,5 @@ response = requests.request(
    params=query
 )
 
-#print(response.text)
+
+TrelloPutCardOnTop.PutOnTop(idTopCardAlert)
