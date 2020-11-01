@@ -7,26 +7,28 @@ import TrelloPutCardOnTop
 
 url = "https://api.trello.com/1/cards"
 
-num1 = randint(0,1)
-num2 = randint(0,50)
 
-line = '\n' + 5*'**______**' + '\n'
+def AlertaLic ():
+    
+    num1 = randint(0,1)
+    num2 = randint(0,50)
+    line = '\n' + 5*'**______**' + '\n'
 
-query = {
-   'key': apiKey,
-   'token': token, 
-   'name': titulo(_alertbid, num1, num2).upper(), 
-   'desc':  desc(_alertbid,num1, num2) + line + obrasFornec + outrosFornec,
-   'pos': 'top',
-   'due' : formatDate(_alertbid, num1, num2),
-   'idList': idAlertaList #id da list
-}
+    query = {
+    'key': apiKey,
+    'token': token, 
+    'name': titulo(_alertbid, num1, num2).upper(), 
+    'desc':  desc(_alertbid,num1, num2) + line + obrasFornec + outrosFornec,
+    'pos': 'top',
+    'due' : formatDate(_alertbid, num1, num2),
+    'idList': idAlertaList #id da list
+    }
 
-response = requests.request(
-   "POST",
-   url,
-   params=query
-)
+    response = requests.request(
+    "POST",
+    url,
+    params=query
+    )
 
 
 TrelloPutCardOnTop.PutOnTop(idTopCardAlert)
