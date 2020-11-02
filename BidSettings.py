@@ -26,3 +26,7 @@ dataFim = '{0}/{1}/{2}'.format(diaFim, mesFim, anoFim)
 
 
 API_URL_BASE = 'http://www.portaltransparencia.gov.br/api-de-dados/contratos?dataInicial={0}%2F{1}%2F{2}&dataFinal={3}%2F{4}%2F{5}&codigoOrgao={6}&pagina={7}'.format(diaIni,mesIni,anoIni, diaFim,mesFim,anoFim,cod_siafi,pag)
+
+
+headers = {'Accept': "application/json",
+           'chave-api-dados': '{0}'.format(API_TOKEN)}

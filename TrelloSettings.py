@@ -11,3 +11,4 @@ idAlertaLeadsList = '5f9bfac7fb9ef28d70a5df26'
 
 idAlertaList = '5f930e76a536284bc3304799'
 
+headers = { "Accept": "application/json"}

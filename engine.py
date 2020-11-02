@@ -1,13 +1,14 @@
-from TrelloCreateCardAlertalic import AlertaLic
-from TrelloPutCardOnTop import PutOnTop
-from TrelloSettings import idTopCardAlert, idTopCardLeads
-from TrelloCreateCardBidLeads import LeadAlert
+from TrelloAlertCard import CreateAlertCard, CoverNewCard
+from TrelloSettings import idTopCardLeads, idAlertaLeadsList, idTopCardLeads, idAlertaList, idTopCardAlert
+from AlertalicExportData import cardTitle, cardDescription, dateBid
+import BidDataExportLeads
 
 def main ():
-    AlertaLic()
-    PutOnTop(idTopCardAlert)
-    LeadAlert()
-    PutOnTop(idTopCardLeads)
+    CreateAlertCard(cardTitle, cardDescription, dateBid, idAlertaList)
+    CoverNewCard(idAlertaList, idTopCardAlert, 'red')
+    CreateAlertCard(BidDataExportLeads.cardTitle, BidDataExportLeads.cardDescrip, 'null', idAlertaLeadsList)
+    CoverNewCard(idAlertaLeadsList, idTopCardLeads, 'orange')
+
     
 
 if __name__ == "__main__":

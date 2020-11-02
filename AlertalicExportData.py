@@ -1,7 +1,8 @@
-import os
-import sys 
 from datetime import date, datetime, timezone
 from AlertalicDataList import get_alertabid
+from random import randint
+from GraphsPortal import *
+
 
 _alertbid = get_alertabid()
 
@@ -16,7 +17,7 @@ f = open("{0}".format(_now), 'w+')'''
 def id(dic_bid, n1, n2):
     return dic_bid[n1][n2]['id_licitacao']
     
-def titulo(dic_bid, n1, n2):
+def title(dic_bid, n1, n2):
     return dic_bid[n1][n2]['titulo']
 
 def uf(dic_bid, n1, n2):
@@ -65,4 +66,12 @@ def desc(dic_bid, n1, n2):
     
     return text
 
-print(formatDate(_alertbid, 1, 0))
+#print(formatDate(_alertbid, 1, 0))
+
+num1 = randint(0,1)
+num2 = randint(0,50)
+line = '\n' + 5*'**______**' + '\n'
+
+cardTitle = title(_alertbid, num1, num2).upper()
+cardDescription =  desc(_alertbid,num1, num2) + line + obrasFornec + outrosFornec
+dateBid = formatDate(_alertbid, num1, num2)

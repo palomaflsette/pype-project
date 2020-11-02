@@ -1,19 +1,24 @@
+import json
 import requests
+from TrelloSettings import apiKey, token, idAlertaList, headers
+from TrelloPutCardOnTop import PutOnTop
 
-from TrelloSettings import apiKey, token
+url = "https://api.trello.com/1/lists/{0}/cards".format(idAlertaList)
 
-url = "https://api.trello.com/1/lists/5f930e76a536284bc3304799/cards"
+query = {'key': apiKey, 'token': token}
 
-query = {
-    'key': apiKey,
-    'token': token,
-
-}
-
-response = requests.request(
-    "GET",
+response = requests.get(
     url,
+    headers=headers,
     params=query
 )
 
-print(response.text)
+
+listData = []
+if response.status_code == 200:
+    listData = json.loads(response.content.decode('UTF-8'))
+
+PutOnTop()
+#Pegando o id do novo card criado com o a função do módulo CreateCard
+idNewCard = listData[1]['id']
+

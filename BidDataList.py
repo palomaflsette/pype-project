@@ -1,11 +1,6 @@
 import requests
 import json
-
-from requests import api
-from BidSettings import API_TOKEN, API_URL_BASE
-
-headers = {'Accept': "application/json",
-           'chave-api-dados': '{0}'.format(API_TOKEN)}
+from BidSettings import API_URL_BASE, headers
 
 
 def get_data_bid():

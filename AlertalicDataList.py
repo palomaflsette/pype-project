@@ -1,9 +1,6 @@
 import json
 import requests
-from AlertalicSettings import API_TOKEN_ALERTA, lista_url_alerta
-
-headers = {'Accept': "application/json",
-           'chave-api-dados': '{0}'.format(API_TOKEN_ALERTA)}
+from AlertalicSettings import lista_url_alerta, headers
 
 
 def get_alertabid():
@@ -24,19 +21,3 @@ def get_alertabid():
 
 
 alertabid = get_alertabid()
-
-#print(len(alertabid))
-#print(alertabid[1][40]['id_licitacao'])
-
-
-'''api_url=None
-
-api_url = '{0}'.format(lista_url_alerta[0])
-
-print(len(lista_url_alerta))
-
-response = requests.get(api_url, headers=headers)
-
-if response.status_code == 200:
-    _bid = json.loads(response.content.decode('UTF-8'))
-    print(_bid)'''

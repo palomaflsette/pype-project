@@ -1,4 +1,5 @@
 from BidDataList import bid
+from datetime import datetime
 
 _bid = bid
 def licitacao():
@@ -40,4 +41,10 @@ def ListingData(data):
     return text
 
 
-print(ListingData(_bid[0]))
+#print(ListingData(_bid[0]))
+
+data_hora = datetime.now()
+now = data_hora.strftime('%d/%m/%Y %H:%M')
+
+cardTitle = 'ALERTA: LEAD DO DIA ' + now
+cardDescrip = '## **_Dados extraídos da Controladoria Geral da União_**\n' + ListingData(_bid[0])
