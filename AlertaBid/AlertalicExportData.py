@@ -1,5 +1,5 @@
 from datetime import date, datetime, timezone
-from AlertalicDataList import get_alertabid
+from AlertaBid.AlertalicDataList import get_alertabid
 from random import randint
 from GraphsPortal import *
 

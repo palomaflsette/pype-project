@@ -1,6 +1,6 @@
 import requests
 import json
-from BidSettings import API_URL_BASE, headers
+from PortalTransp.BidSettings import API_URL_BASE, headers
 
 
 def get_data_bid():

@@ -1,4 +1,4 @@
-from BidDataList import bid
+from PortalTransp.BidDataList import bid
 from datetime import datetime
 
 _bid = bid

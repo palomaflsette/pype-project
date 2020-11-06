@@ -4,7 +4,7 @@ API_TOKEN_ALERTA = 'a27d0b3a41e73335a24af27094457098'
 
 uf = 'RJ,SP,AL,MT,MG,RS,SE,AM'
 
-palavras_chave = 'engenharia,pavimentacao,reforma,construcao,estrada,construtora,restauracao,obra'
+palavras_chave = 'engenharia,pavimentacao,estrada,reforma,construcao,estrada,construtora,restauracao,obra'
 
 cod_municipios = [] #caso a haja interesse, consultar a planilha que está no diretório para encontrar os códigos dos municípios
 

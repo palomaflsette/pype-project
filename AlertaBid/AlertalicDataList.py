@@ -1,6 +1,6 @@
 import json
 import requests
-from AlertalicSettings import lista_url_alerta, headers
+from AlertaBid.AlertalicSettings import lista_url_alerta, headers
 
 
 def get_alertabid():

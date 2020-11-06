@@ -1,12 +1,12 @@
 from TrelloAlertCard import CreateAlertCard, CoverNewCard
 from TrelloSettings import idTopCardLeads, idAlertaLeadsList, idTopCardLeads, idAlertaList, idTopCardAlert
-from AlertalicExportData import cardTitle, cardDescription, dateBid
-import BidDataExportLeads
+from AlertaBid.AlertalicExportData import cardTitle, cardDescription, dateBid
+import PortalTransp.BidDataExportLeads 
 
 def main ():
     CreateAlertCard(cardTitle, cardDescription, dateBid, idAlertaList)
     CoverNewCard(idAlertaList, idTopCardAlert, 'red')
-    CreateAlertCard(BidDataExportLeads.cardTitle, BidDataExportLeads.cardDescrip, 'null', idAlertaLeadsList)
+    CreateAlertCard(PortalTransp.BidDataExportLeads.cardTitle, PortalTransp.BidDataExportLeads.cardDescrip, 'null', idAlertaLeadsList)
     CoverNewCard(idAlertaLeadsList, idTopCardLeads, 'orange')
 
     
