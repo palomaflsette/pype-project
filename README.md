@@ -20,4 +20,7 @@ Pype é um projeto que consiste em captar informações de diferentes bases de d
 
 Atente-se para as settings em cada pasta contendo os módulos, pois deve-se inserir dados relativos a tokens e chaves para a execução do código. 
 
-![gif](https://media.giphy.com/media/pniNrZjeo9Ife8owEj/source.gif)
+![gif](gg_1.gif)
+
+
+- Link do quadro onde chegam os dados: https://trello.com/b/kYhmuA0q/pype-garantia-bid-2020
