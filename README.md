@@ -24,3 +24,8 @@ Atente-se para as settings em cada pasta contendo os módulos, pois deve-se inse
 
 
 - Link do quadro onde chegam os dados: https://trello.com/b/kYhmuA0q/pype-garantia-bid-2020
+
+
+### Roadmap
+- Desenvolver um crontab em um servidor na nuvem para definir periodicidade e compilação automática diariamente;
+-
