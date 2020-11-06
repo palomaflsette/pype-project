@@ -20,4 +20,4 @@ Pype é um projeto que consiste em captar informações de diferentes bases de d
 
 Atente-se para as settings em cada pasta contendo os módulos, pois deve-se inserir dados relativos a tokens e chaves para a execução do código. 
 
-![gif-example](gg_1.g)
+![](https://gph.is/g/4zWVyg9)
