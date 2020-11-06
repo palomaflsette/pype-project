@@ -18,7 +18,7 @@ Pype é um projeto que consiste em captar informações de diferentes bases de d
 > python engine.py
 ~~~
 
-Atente-se para as settings em cada pasta contendo os módulos, pois deve-se inserir dados relativos a tokens e chaves para a execução do código. 
+Atente-se para as settings em cada pasta contendo os módulos, pois deve-se inserir dados relativos a tokens e chaves para a execução do código. Deve-se incluir as devidas chaves nas variáveis que contém strings
 
 
 ![gif](gg_1.gif)
