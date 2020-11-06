@@ -20,6 +20,7 @@ Pype é um projeto que consiste em captar informações de diferentes bases de d
 
 Atente-se para as settings em cada pasta contendo os módulos, pois deve-se inserir dados relativos a tokens e chaves para a execução do código. 
 
+
 ![gif](gg_1.gif)
 
 
@@ -27,5 +28,4 @@ Link do quadro onde chegam os dados: https://trello.com/b/kYhmuA0q/pype-garantia
 
 
 ### Roadmap
-- Desenvolver um crontab em um servidor na nuvem para definir periodicidade e compilação automática diariamente;
-- 
+- Desenvolver um crontab em um servidor na nuvem para definir periodicidade e compilação automática diariamente.

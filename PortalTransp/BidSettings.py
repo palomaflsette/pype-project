@@ -1,7 +1,7 @@
 
 from random import randint, choice
 
-API_TOKEN = '921ea4b4c449bd40b92cf3d010e98d26'
+API_TOKEN = ' '
 
 
 pag = randint(1,5) #para escolher uma pagina aleatoria entre 1-5

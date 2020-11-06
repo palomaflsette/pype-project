@@ -1,6 +1,6 @@
 from random import randint
 
-API_TOKEN_ALERTA = 'a27d0b3a41e73335a24af27094457098'
+API_TOKEN_ALERTA = ' '
 
 uf = 'RJ,SP,AL,MT,MG,RS,SE,AM'
 
