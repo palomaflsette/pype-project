@@ -27,5 +27,12 @@ Atente-se para as settings em cada pasta contendo os módulos, pois deve-se inse
 Link do quadro onde chegam os dados: https://trello.com/b/kYhmuA0q/pype-garantia-bid-2020
 
 
+#
+### Documentações
+- Trello API: https://developer.atlassian.com/cloud/trello/rest/api-group-actions/
+- Portal da Transparência: http://www.portaltransparencia.gov.br/swagger-ui.html
+- Alerta Licitação: https://alertalicitacao.com.br/!api
+
+#
 ### Roadmap
 - Desenvolver um crontab em um servidor na nuvem para definir periodicidade e compilação automática diariamente.
